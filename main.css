@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+}
+
+.conteiner{
+    width: 500px;
+    background-color: #d2d2d2;
+    height: 80%;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    position: relative;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    color: blueviolet;
+}
+
+#form, .conteiner-task{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+}
+#form{
+    gap: 0.5rem;
+}
+
+input, button, li{
+    border-radius: 0.25rem;
+    border: none;
+}
+
+#form input{
+    width: 90%; 
+    font-size: 1.1em;
+    padding-left: 0.5rem;
+}
+
+#form button{
+    width: 10%;
+    background-color: green;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#form button:hover{
+    background-color: greenyellow;
+}
+
+#form button:hover span{
+    color: green;
+}
+
+#form button span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.conteiner-task {
+    max-height: 65%;
+    overflow: auto;
+}
+
+.conteiner-task ul{
+    width: 100%;
+}
+
+.conteiner-task ul li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    height: 38px;
+    margin-bottom: 0.25rem;
+}
+
+.conteiner-task ul li p{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.conteiner-task ul li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5em;
+    border: 1px solid red;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.conteiner-task ul li button span{
+    color: red;
+}
+
+.conteiner-task ul li button:hover{
+    background-color: red;
+}
+
+.conteiner-task ul li button:hover span{
+    color: #fff;
+}
+
+footer{
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between; 
+    right: 2rem;
+    max-width: 500px;
+}
+
+footer button{
+    padding: 0.5rem;
+    background-color: blueviolet;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer button:hover{
+    background-color: red;
+}
